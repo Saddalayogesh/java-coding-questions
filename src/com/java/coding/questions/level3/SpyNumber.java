@@ -7,13 +7,16 @@ public class SpyNumber {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter number: ");
         int num = sc.nextInt();
-        int sum = 0;
 
-        int product;
-        for(product = 1; num > 0; num /= 10) {
-            int digit = num % 10;
+        int temp = num;
+        int sum = 0;
+        int product = 1;
+
+        while (temp > 0) {
+            int digit = temp % 10;
             sum += digit;
             product *= digit;
+            temp /= 10;
         }
 
         if (sum == product) {
