@@ -7,10 +7,11 @@ public class OneSeries {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter Number: ");
         int N = sc.nextInt();
-        long num = 0L;
 
-        for(int i = 1; i <= N; ++i) {
-            num = num * 10L + 1L;
+        String num = "";
+
+        for (int i = 1; i <= N; i++) {
+            num = num + "1";
             System.out.println(num);
         }
 
