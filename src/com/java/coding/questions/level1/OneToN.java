@@ -8,9 +8,10 @@ public class OneToN {
         System.out.print("Enter a Number: ");
         int n = sc.nextInt();
 
-        for(int i = 1; i <= n; ++i) {
+        for (int i = 1; i <= n; i++) {
             System.out.println(i);
         }
 
+        sc.close();
     }
 }
