@@ -7,23 +7,16 @@ public class FibonacciNth {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter Number: ");
         int N = sc.nextInt();
-        int a = 0;
-        int b = 1;
-        if (N == 1) {
-            System.out.println(a);
-        } else if (N == 2) {
-            System.out.println(b);
-        } else {
-            int c = 0;
 
-            for(int i = 3; i <= N; ++i) {
-                c = a + b;
-                a = b;
-                b = c;
-            }
+        int a = 0, b = 1;
 
-            System.out.println(b);
+        for (int i = 1; i < N; i++) {
+            int c = a + b;
+            a = b;
+            b = c;
         }
+
+        System.out.println(a);
 
         sc.close();
     }
