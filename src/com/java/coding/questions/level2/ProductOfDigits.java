@@ -8,12 +8,20 @@ public class ProductOfDigits {
         System.out.println("Enter a Number :");
         int num = scanner.nextInt();
 
-        int product;
-        for(product = 1; num > 0; num /= 10) {
+        if (num == 0) {
+            System.out.println(0);
+            return;
+        }
+
+        int product = 1;
+
+        while (num > 0) {
             int digit = num % 10;
             product *= digit;
+            num /= 10;
         }
 
         System.out.println(product);
+        scanner.close();
     }
 }
