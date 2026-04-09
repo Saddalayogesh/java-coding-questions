@@ -3,22 +3,27 @@ package com.java.coding.questions.level3;
 import java.util.Scanner;
 
 public class StrongNumber {
+
+    public static int factorial(int n) {
+        int fact = 1;
+        for (int i = 1; i <= n; i++) {
+            fact *= i;
+        }
+        return fact;
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter number: ");
         int num = sc.nextInt();
         int original = num;
 
-        int sum;
-        for(sum = 0; num > 0; num /= 10) {
+        int sum = 0;
+
+        while (num > 0) {
             int digit = num % 10;
-            int fact = 1;
-
-            for(int i = 1; i <= digit; ++i) {
-                fact *= i;
-            }
-
-            sum += fact;
+            sum += factorial(digit);
+            num /= 10;
         }
 
         if (sum == original) {
