@@ -7,7 +7,16 @@ public class SumNaturalNumbers {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a Number: ");
         int n = sc.nextInt();
+
+        if (n < 1) {
+            System.out.println("Please enter a positive integer.");
+            sc.close();
+            return;
+        }
+
         int sum = n * (n + 1) / 2;
-        System.out.println("Sum is  " + sum);
+        System.out.println("Sum is " + sum);
+
+        sc.close();
     }
 }
