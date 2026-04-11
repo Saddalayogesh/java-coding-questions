@@ -7,18 +7,25 @@ public class ArmstrongNumber {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a Number :");
         int num = scanner.nextInt();
+
         int original = num;
         int sum = 0;
         int count = 0;
 
-        for(int temp = num; temp > 0; ++count) {
+        int temp = num;
+
+        if (temp == 0) count = 1;
+        while (temp > 0) {
+            count++;
             temp /= 10;
         }
 
-        while(num > 0) {
-            int digit = num % 10;
-            sum += (int)Math.pow((double)digit, (double)count);
-            num /= 10;
+        temp = num;
+
+        while (temp > 0) {
+            int digit = temp % 10;
+            sum += (int) Math.pow(digit, count);
+            temp /= 10;
         }
 
         if (sum == original) {
@@ -27,5 +34,6 @@ public class ArmstrongNumber {
             System.out.println("Not Armstrong");
         }
 
+        scanner.close();
     }
 }
