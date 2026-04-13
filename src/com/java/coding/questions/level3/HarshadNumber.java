@@ -15,7 +15,7 @@ public class HarshadNumber {
             sum += digit;
         }
 
-        if (num % sum == 0) {
+        if (sum != 0 && num % sum == 0) {
             System.out.println("Harshad Number");
         } else {
             System.out.println("Not Harshad Number");
