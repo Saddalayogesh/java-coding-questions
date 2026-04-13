@@ -8,6 +8,11 @@ public class CoutingDigits {
         System.out.print("Enter number: ");
         int num = sc.nextInt();
 
+        if (num == 0) {
+            System.out.println("Total digits = 1");
+            return;
+        }
+
         int count;
         for (count = 0; num != 0; ++count) {
             num /= 10;
