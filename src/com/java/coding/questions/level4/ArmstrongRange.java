@@ -14,12 +14,12 @@ public class ArmstrongRange {
             int count = 0;
 
             for(int temp2 = num; temp2 > 0; temp2 /= 10) {
-                ++count;
+                count++;
             }
 
             while(temp > 0) {
                 int digit = temp % 10;
-                sum = (int)((double)sum + Math.pow((double)digit, (double)count));
+                sum += (int)Math.pow(digit, count);
                 temp /= 10;
             }
 
