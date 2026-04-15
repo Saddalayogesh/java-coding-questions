@@ -11,7 +11,7 @@ public class LCM {
         int b = sc.nextInt();
 
         int max;
-        for(max = Math.max(a, b); max % a != 0 || max % b != 0; ++max) {
+        for (max = Math.max(a, b); max % a != 0 || max % b != 0; ++max) {
         }
 
         System.out.println("LCM = " + max);
