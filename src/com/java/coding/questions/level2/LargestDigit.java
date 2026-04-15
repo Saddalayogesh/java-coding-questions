@@ -8,14 +8,17 @@ public class LargestDigit {
         System.out.println("Enter a Number :");
         int num = scanner.nextInt();
 
-        int max;
-        for(max = 0; num > 0; num /= 10) {
+        int max = 0;
+        num = Math.abs(num);
+
+        for (; num > 0; num /= 10) {
             int digit = num % 10;
             if (digit > max) {
                 max = digit;
             }
         }
 
-        System.out.println(" largest number in a digit is " + max);
+        System.out.println("largest digit is " + max);
+        scanner.close();
     }
 }
