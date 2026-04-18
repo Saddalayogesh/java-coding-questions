@@ -8,14 +8,17 @@ public class SmallestNumber {
         System.out.println("Enter a Number :");
         int num = scanner.nextInt();
 
-        int min;
-        for(min = num % 10; num > 0; num /= 10) {
+        int min = num % 10;
+
+        while (num > 0) {
             int digit = num % 10;
             if (digit < min) {
                 min = digit;
             }
+            num /= 10;
         }
 
-        System.out.println(" Smallest number in a digit is " + min);
+        System.out.println("Smallest digit is " + min);
+        scanner.close();
     }
 }
