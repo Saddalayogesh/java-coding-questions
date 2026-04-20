@@ -7,11 +7,16 @@ public class CountFactors {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter number: ");
         int num = sc.nextInt();
+
         int count = 0;
 
-        for(int i = 1; i <= num; ++i) {
-            if (num % i == 0) {
-                ++count;
+        for(int i = 1; i * i <= num; i++) {
+            if(num % i == 0) {
+                if(i * i == num) {
+                    count++;        // perfect square
+                } else {
+                    count += 2;     // pair of factors
+                }
             }
         }
 
