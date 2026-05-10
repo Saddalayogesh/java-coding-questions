@@ -2,6 +2,11 @@
 
 🚀 A collection of beginner-to-advanced Java programs focused on loops, numbers, mathematical logic, and problem-solving.
 
+✨ Improve coding skills with hands-on Java practice  
+✨ Strengthen Core Java fundamentals step by step  
+✨ Beginner-friendly programs with simple logic  
+✨ Perfect for students, freshers, and interview preparation  
+
 ---
 
 ## 📚 Topics Covered
@@ -78,19 +83,6 @@
 
 ---
 
-## 📂 Repository Structure
-
-```bash
-Java-Coding-Questions/
-│
-├── Level-1-Basic-Loops
-├── Level-2-Number-Manipulation
-├── Level-3-Math-Logic
-└── Level-4-Series-Problems
-```
-
----
-
 ## ▶️ How to Run
 
 1️⃣ Clone the repository
@@ -133,14 +125,5 @@ By completing these programs, you will gain confidence in:
 ---
 
 ## 📌 Author
-
-👨‍💻 Developed with Java Practice & Passion ☕✨ Easy-to-Understand Programs  
-✨ Step-by-Step Logic Building  
-✨ Clean and Simple Java Code  
-✨ Perfect for Students and Freshers  
-
----
-
-# 📌 Author
 
 👨‍💻 Developed with Java Practice & Passion ☕
